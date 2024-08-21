@@ -11,11 +11,20 @@ import {
   DiJava,
 } from "react-icons/di";
 import {
-  SiRedis,
-  SiFirebase,
-  SiNextdotjs,
-  SiSolidity,
-  SiPostgresql,
+    SiRedis,
+    SiFirebase,
+    SiNextdotjs,
+    SiSolidity,
+    SiPostgresql,
+    SiLaravel,
+    SiSpring,
+    SiPhp,
+    SiCsharp,
+    SiKotlin,
+    SiDotnet,
+    SiDocker,
+    SiCodeigniter
+
 } from "react-icons/si";
 import { TbBrandGolang } from "react-icons/tb";
 
@@ -23,13 +32,25 @@ function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
+        <SiCsharp />
       </Col>
+        <Col xs={4} md={2} className="tech-icons">
+            <SiPhp />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+            <SiKotlin />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+            <SiDotnet />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+            <SiDocker />
+        </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <TbBrandGolang />
+        <SiSpring />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiNodejs />
@@ -37,14 +58,14 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <DiReact />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
-      </Col>
+      {/*<Col xs={4} md={2} className="tech-icons">*/}
+      {/*  <SiSolidity />*/}
+      {/*</Col>*/}
       <Col xs={4} md={2} className="tech-icons">
         <DiMongodb />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
+        <SiCodeigniter />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />
@@ -53,7 +74,7 @@ function Techstack() {
         <SiFirebase />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
+        <SiLaravel />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiPostgresql />
