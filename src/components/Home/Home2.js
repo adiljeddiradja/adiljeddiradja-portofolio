@@ -1,13 +1,12 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/foto.png";
-import Particle from "../Particle";
-import Tilt from "react-parallax-tilt";
+import { Tilt } from "react-tilt";
 import {
   AiFillGithub,
   AiOutlineTwitter,
   AiFillInstagram,
-    AiFillMail
+  AiFillMail
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
@@ -55,7 +54,7 @@ function Home2() {
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              // <img src={myImg} className="img-fluid" alt="avatar" />
+              <img src={myImg} className="img-fluid" alt="avatar" />
             </Tilt>
           </Col>
         </Row>
@@ -68,52 +67,52 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                    href="https://github.com/adiljeddiradja/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="icon-colour  home-social-icons"
+                  href="https://github.com/adiljeddiradja/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
                 >
-                  <AiFillGithub/>
+                  <AiFillGithub />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                    href="https://x.com/deelwholaugh"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="icon-colour  home-social-icons"
+                  href="https://x.com/deelwholaugh"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
                 >
-                  <AiOutlineTwitter/>
+                  <AiOutlineTwitter />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                    href="https://www.linkedin.com/in/adil-jeddi-radja-3a6093298/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="icon-colour  home-social-icons"
+                  href="https://www.linkedin.com/in/adil-jeddi-radja-3a6093298/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
                 >
-                  <FaLinkedinIn/>
+                  <FaLinkedinIn />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                    href="https://www.instagram.com/adiljeddiradja/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="icon-colour home-social-icons"
+                  href="https://www.instagram.com/adiljeddiradja/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
                 >
-                  <AiFillInstagram/>
+                  <AiFillInstagram />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                    href="mailto:radjaajr@gmail.com"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="icon-colour home-social-icons"
+                  href="mailto:radjaajr@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
                 >
-                  <AiFillMail/>
+                  <AiFillMail />
                 </a>
               </li>
             </ul>

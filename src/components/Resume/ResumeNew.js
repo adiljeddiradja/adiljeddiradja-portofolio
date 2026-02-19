@@ -6,6 +6,7 @@ import pdf from "../../Assets/../Assets/CV_ADIL JEDDI RADJA.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+import { motion } from "framer-motion";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function ResumeNew() {
@@ -16,7 +17,11 @@ function ResumeNew() {
   }, []);
 
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+    >
       <Container fluid className="resume-section">
         <Particle />
         <Row style={{ justifyContent: "center", position: "relative" }}>
@@ -49,7 +54,7 @@ function ResumeNew() {
           </Button>
         </Row>
       </Container>
-    </div>
+    </motion.div>
   );
 }
 

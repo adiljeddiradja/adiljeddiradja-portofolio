@@ -16,6 +16,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "@fontsource/outfit"; // Import the new font
 
 function App() {
   const [load, upadateLoad] = useState(true);
